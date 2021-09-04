@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+  height: 100vh;
+  color: white;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url("https://i.pinimg.com/originals/2d/71/05/2d710504e43aa9cc53c56046be1eb032.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+h1 {
+  margin: 0;
+}
+
+.container {
+  margin: auto;
+  max-width: 600px;
+  padding: 15px;
+}
+
+.genre {
+  cursor: pointer;
+  margin: 1rem 0.3rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.genre:hover {
+  transform: scale(1.09);
+  background: white;
+  color: black;
+}
+
+.anime-list {
+  list-style: none;
+  padding: 1rem;
+  border: 1px solid #767777;
+  width: 200px;
+  height: 100px;
+  margin: 1rem 0rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.anime-list:hover {
+  width: 250px;
+  height: 150px;
+  background-size: length;
+}
